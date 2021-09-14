@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body,
+figure,
+div,
+input,
+textarea,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+  list-style: none;
+}
+h2 {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+div.flex {
+  display: flex;
+}
+div.full-container {
+  width: 100%;
+  max-width: 1850px;
+  margin: 0 auto;
+}
+div.large-container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+div.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+figcaption {
+  font-size: 1px;
+  color: transparent;
+}
+
+header {
+  background: #ffffff;
+}
+div.div-search button {
+  width: 0px;
+  border: none;
+  display: block;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  color: #ffff;
+  padding: 0 0 0 0;
+}
+div.div-search img {
+  width: 20px;
+  border: 2px solid #000;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+div.div-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+div.div-search input {
+  width: 155px;
+  border: 2px solid #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+section.secaoDestaque {
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+section.secaoDestaque img {
+  position: absolute;
+  z-index: 0;
+  filter: brightness(0.5);
+}
+section.secaoDestaque h2 {
+  color: #ffff;
+  font-size: 32px;
+  z-index: 1;
+  font-weight: 800;
+}
+section.secaoDestaque p {
+  color: #ffff;
+  text-align: center;
+  font-size: 21px;
+  padding: 36px 10px 10px 10px;
+  z-index: 1;
+}
+
+header.topo {
+  display: flex;
+  flex-direction: column;
+}
+header.topo figure img {
+  width: 85px;
+  padding: 10px;
+  margin: 0 0 0 100px;
+}
+header.topo > label {
+  margin: 10px;
+  width: 35px;
+  border-radius: 5px;
+  position: absolute;
+  left: 10px;
+  padding: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+header.topo > label span {
+  display: block;
+  width: 90%;
+  height: 3px;
+  background-color: #818181;
+  border-radius: 5px;
+  margin: 5px auto 5px;
+}
+
+header .cabecalho__menu ul {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  padding: 10px;
+  left: -100%;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+header .cabecalho__menu input:checked ~ ul {
+  left: 0;
+  transition: 0.5s;
+}
+
+header .cabecalho__menu input {
+  display: none;
+}
+
+div.flex-col h2 {
+  margin: 0 auto;
+  text-align: inherit;
+  font-size: 24px;
+  margin-top: 100px;
+  max-width: 250px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #303030;
+}
+div.flex-col p {
+  margin-bottom: 25px;
+  text-align: inherit;
+  color: #303030;
+  max-width: 250px;
+  margin: 0 auto;
+}
+div.flex-col button {
+  border: 1px solid #818181;
+  padding: 14px 80px;
+  display: block;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 0 auto 25px;
+  margin-top: 25px;
+  font-size: 1.5em;
+}
+div.flex-col button:hover {
+  color: #ff00008a;
+}
+div.flex-col span {
+  text-align: inherit;
+  color: #818181;
+  max-width: 250px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 25px;
+}
+div.flex-branco div.flex-col figure img {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: block;
+}
+div.flex-branco {
+  margin-bottom: 50px;
+}
+h6,
+h4 {
+  margin-left: 30px;
+}
+.around__contato {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section .cont__secContato {
+  background-color: #eaeaea;
+  align-items: center;
+}
+.cont__secContato {
+  max-width: 1024px;
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+}
+.title__secLocalizacao {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+.left__column {
+  flex-basis: 50%;
+  padding: 0;
+}
+.left__column li {
+  color: #818181;
+}
+.info__description {
+  padding: 15px 0;
+  color: #818181;
+}
+.Item {
+  padding: 5px 0;
+  color: #818181;
+  width: 100%;
+}
+a:link {
+  color: #818181;
+}
+a:visited {
+  color: #818181;
+}
+a:active {
+  color: #818181;
+}
+.right__column {
+  flex-basis: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form__column {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.columns {
+  width: 80%;
+  margin: 0 auto;
+}
+.form__imput {
+  flex-basis: 50%;
+}
+.form__imput--email {
+  justify-content: flex-end;
+}
+
+.right__column .imput__name {
+  margin-bottom: 8px;
+  width: 200px;
+}
+.right__column .imput__email {
+  margin-bottom: 8px;
+  width: 200px;
+}
+#mensagem {
+  width: 200px;
+}
+.submit {
+  margin: auto;
+  font-size: 1em;
+  border: 1px solid #81818140;
+  padding: 5px 25px;
+  display: block;
+  border-radius: 5px;
+  background-color: white;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: #00043e;
+  color: white;
+}
+
+footer p {
+  opacity: 0;
+}
+footer .fa {
+  color: #007aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 769px) {
+  label {
+    display: none;
+  }
+  header.topo figure img {
+    width: 105px;
+    padding: 15px;
+  }
+  header .cabecalho__menu ul {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0vh;
+    width: 326px;
+    padding: 10px;
+    z-index: 1;
+    transition: 0s;
+    margin-top: 10px;
+    margin-left: 57%;
+  }
+
+  header .cabecalho__menu ul li a {
+    color: white;
+    margin: 10px;
+    font-family: "Montserrat";
+    text-decoration: none;
+    display: block;
+    margin-top: 13px;
+  }
+
+  header .cabecalho__menu input:checked ~ ul {
+    left: 0;
+    transition: 0s;
+  }
+  header section.secaoDestaque h2 {
+    font-size: 63px;
+    max-width: 1000px;
+  }
+  header section.secaoDestaque p {
+    font-size: 21px;
+    padding-bottom: 20px;
+  }
+  .cartao-mobile {
+    display: none;
+  }
+  header section.secaoDestaque {
+    padding-top: 140px;
+    background-image: url("../img/cartao.jpg");
+    background-position: center;
+    background-position-y: 0px;
+    background-size: cover;
+    filter: brightness(0.5);
+  }
+  header section.secaoDestaque div.secaoDestaqueFormulario {
+    padding-bottom: 220px;
+    border-bottom: none;
+  }
+  div.flex-col h2 {
+    max-width: 460px;
+    padding-left: 20px;
+  }
+  div.flex-col p {
+    max-width: 450px;
+    padding-left: 20px;
+  }
+  div.flex-col button {
+    border: 1px solid #81818140;
+    padding: 5px 25px;
+    display: block;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 0px auto 25px;
+    margin-top: 25px;
+    font-size: 1em;
+    color: #818181;
+    margin-left: 35px;
+  }
+  div.flex-col span {
+    max-width: 450px;
+    padding-left: 35px;
+  }
+  div.flex-branco div.flex-col figure img {
+    max-width: 450px;
+  }
+  div.flex-branco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .columns {
+    display: flex;
+    justify-content: start;
+  }
+  .right__column {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  .right__column .imput__name {
+    margin-bottom: 8px;
+    width: 150px;
+  }
+  .right__column .imput__email {
+    margin-bottom: 8px;
+    margin-right: 10px;
+    width: 150px;
+  }
+  #mensagem {
+    width: 355px;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .form__column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .submit {
+    margin-left: 270px;
+    margin-bottom: 25px;
+  }
+}
